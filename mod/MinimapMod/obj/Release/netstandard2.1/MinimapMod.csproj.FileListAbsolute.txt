@@ -1,0 +1,11 @@
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\bin\netstandard2.1\MinimapMod.deps.json
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\bin\netstandard2.1\MinimapMod.dll
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\bin\netstandard2.1\MinimapMod.pdb
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.csproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MyPluginInfo.cs
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.AssemblyInfoInputs.cache
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.AssemblyInfo.cs
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.dll
+C:\Users\matia\OneDrive\Escritorio\mod\MinimapMod\obj\Release\netstandard2.1\MinimapMod.pdb

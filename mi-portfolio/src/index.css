@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Stroke Text - Efecto de texto con borde */
+  .stroke-text {
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: white;
+  }
+  
+  /* Gradiente del tema */
+  .bg-themeGradient {
+    background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  }
+}

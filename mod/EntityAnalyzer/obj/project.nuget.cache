@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y7xCmig7Xs0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matia\\OneDrive\\Escritorio\\mod\\EntityAnalyzer\\EntityAnalyzer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matia\\.nuget\\packages\\mono.cecil\\0.11.5\\mono.cecil.0.11.5.nupkg.sha512"
+  ],
+  "logs": []
+}
