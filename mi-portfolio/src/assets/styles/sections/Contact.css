@@ -1,0 +1,65 @@
+.contact-input {
+  width: 100%;
+  background-color: #181A1C;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  color: rgb(255 255 255 / 0.7);
+  outline: none;
+}
+
+.contact-input::placeholder {
+  color: rgb(255 255 255 / 0.4);
+}
+
+.contact-submit-btn {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255 255 255 / 0.15);
+  padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+  padding-right: 2.75rem;
+  border-radius: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  color: white;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.contact-submit-btn::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff82f3 0%, #7b13ff 50%, #400d64 100%);
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+
+.contact-submit-btn:hover::before {
+  opacity: 0.2;
+}
+
+.contact-submit-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  transition: all 60ms;
+}
+
+.contact-submit-btn:hover::after {
+  opacity: 0.4;
+  transform: translateY(-50%) scale(2.7);
+}
