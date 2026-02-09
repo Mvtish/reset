@@ -1,0 +1,29 @@
+[Oct 27 20:19:25] 
+[Oct 27 20:19:25] ==DUPLICATOR INSTALLER BOOTSTRAP v1.5.14==
+[Oct 27 20:19:25] ----------------------------------------------------
+[Oct 27 20:19:25] Installer bootstrap start
+[Oct 27 20:19:25] Ready to extract the installer
+[Oct 27 20:19:25] Checking permission of destination folder
+[Oct 27 20:19:25] Expand directory from offset 57046562
+[Oct 27 20:19:28] No need to create dup-installer/.htaccess or dup-installer/.user.ini
+[Oct 27 20:19:28] SAPI: apache2handler
+[Oct 27 20:19:28] [PHP ERR][ISSUE] MSG:Creation of dynamic property DUPX_Bootstrap::$archive is deprecated [CODE:8192|FILE:C:\laragon\www\main\installer.php|LINE:530]
+[Oct 27 20:19:28] [PHP ERR][ISSUE] MSG:Creation of dynamic property DUPX_Bootstrap::$bootloader is deprecated [CODE:8192|FILE:C:\laragon\www\main\installer.php|LINE:531]
+[Oct 27 20:19:28] Set permissions of dup-installer<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/addons<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/assets<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/classes<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/ctrls<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/favicon<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/libs<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/original_files_[HASH]<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/src<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/templates<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/vendor<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/dup-archive__[HASH].txt<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/dup-scan__[HASH].json<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/dup-scanned-dirs__[HASH].txt<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/dup-scanned-files__[HASH].txt<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/index.php<br/>
+[Oct 27 20:19:28] Set permissions of dup-installer/main.installer.php<br/>
+[Oct 27 20:19:28] DONE: No detected errors so redirecting to the main installer. Main Installer URI = http://main.test/dup-installer/main.installer.php

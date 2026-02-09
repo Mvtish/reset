@@ -1,0 +1,37 @@
+/*
+Theme Name: Danixpert
+Theme URI: https://danixpert.com
+Author: Danixpert
+Author URI: https://danixpert.com
+Description: Tema personalizado para Danixpert - Landing Page
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: danixpert
+*/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,591 @@
+/* ========================================
+   WORKS SECTION - Nuestros Trabajos
+   ======================================== */
+
+.works-section {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 100px 0 0 0;
+    overflow: hidden;
+}
+
+.works-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* ========================================
+   HEADER - Título y Descripción
+   ======================================== */
+.works-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: start;
+}
+
+.works-header-left {
+    max-width: 683px;
+}
+
+.works-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #010F20;
+    line-height: 110%;
+    margin: 0;
+}
+
+.works-header-right {
+    max-width: 540px;
+    padding-top: 10px;
+}
+
+.works-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+}
+
+.works-description:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   CARRUSEL DE PROYECTOS
+   ======================================== */
+.works-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1656px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.works-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
+    padding: 10px 0;
+    will-change: transform;
+}
+
+/* ========================================
+   FLECHAS DE NAVEGACIÓN
+   ======================================== */
+.works-arrow {
+    position: absolute;
+    top: 240px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    color: #010F20;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.works-arrow:hover {
+    background: #010F20;
+    color: #FFFFFF;
+}
+
+.works-arrow-prev {
+    left: 0;
+}
+
+.works-arrow-next {
+    right: 0;
+}
+
+/* ========================================
+   CONTROLES MÓVIL (ocultos en desktop)
+   ======================================== */
+.works-mobile-controls {
+    display: none;
+}
+
+/* ========================================
+   WORK CARD
+   ======================================== */
+.work-card {
+    flex-shrink: 0;
+    width: 542px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 0;
+}
+
+.work-image {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover .work-image img {
+    transform: scale(1.02);
+}
+
+/* Video en work card */
+.work-image.work-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.work-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #010F20;
+    padding: 12px 20px;
+    border-radius: 0 8px 0 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* ========================================
+   DESKTOP - ESQUINAS RECTAS
+   ======================================== */
+@media screen and (min-width: 1025px) {
+    .works-arrow {
+        border-radius: 0;
+    }
+
+    .work-card {
+        border-radius: 0;
+    }
+
+    .work-image {
+        border-radius: 0;
+    }
+
+    .work-image.work-video video {
+        border-radius: 0;
+    }
+
+    .work-tag {
+        border-radius: 0;
+    }
+}
+
+.work-content {
+    padding: 0 30px 30px 30px;
+}
+
+.work-card-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #010F20;
+    line-height: 130%;
+    margin: 0 0 30px 0;
+}
+
+.work-card-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #626262;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+}
+
+.work-card-description:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET (1024px y menos)
+   ======================================== */
+@media screen and (max-width: 1024px) {
+    .works-section {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .works-container {
+        padding: 0 60px;
+    }
+
+    .works-header {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .works-header-left,
+    .works-header-right {
+        max-width: 100%;
+    }
+
+    .works-title {
+        font-size: 36px;
+    }
+
+    .work-card {
+        width: 450px;
+    }
+
+    .work-image {
+        height: 400px;
+    }
+
+    .work-content {
+        padding: 0 24px 26px 24px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - MÓVIL (768px y menos)
+   ======================================== */
+@media screen and (max-width: 768px) {
+    .works-section {
+        padding: 40px 0 20px 0;
+    }
+
+    .works-container {
+        padding: 0 30px;
+    }
+
+    .works-carousel {
+        padding: 0;
+    }
+
+    .works-arrow {
+        display: none;
+    }
+
+    .works-header {
+        margin-bottom: 40px;
+    }
+
+    .works-title {
+        font-size: 32px;
+    }
+
+    .works-description {
+        font-size: 15px;
+    }
+
+    .work-card {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .work-image {
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 18px;
+        margin-bottom: 22px;
+    }
+
+    .work-tag {
+        padding: 10px 16px;
+        font-size: 13px;
+        border-radius: 0 10px 0 18px;
+    }
+
+    .work-card-title {
+        font-size: 22px;
+        margin: 0 0 18px 0;
+    }
+
+    .work-card-description {
+        margin: 0 0 14px 0;
+    }
+
+    .work-content {
+        padding: 0 22px 24px 22px;
+    }
+
+    .works-track {
+        gap: 18px;
+    }
+
+    .works-mobile-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 18px;
+    }
+
+    .works-mobile-indicator {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .works-mobile-indicator-bar {
+        width: 22px;
+        height: 4px;
+        border-radius: 999px;
+        background: rgba(1, 15, 32, 0.22);
+        flex: 0 0 auto;
+        transition: background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .works-mobile-indicator-bar.is-active {
+        background: #4FD1C5;
+        opacity: 1;
+    }
+
+    .works-mobile-buttons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex: 0 0 auto;
+    }
+
+    .works-mobile-btn {
+        width: 54px;
+        height: 54px;
+        border: none;
+        border-radius: 999px;
+        background: #F2F2F2;
+        color: #010F20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .works-mobile-btn:hover {
+        transform: translateY(-1px);
+        background: #EAEAEA;
+    }
+
+    .works-mobile-btn:disabled {
+        opacity: 0.45;
+        cursor: default;
+        transform: none;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - MÓVIL PEQUEÑO (480px y menos)
+   ======================================== */
+@media screen and (max-width: 480px) {
+    .works-section {
+        padding: 30px 0 20px 0;
+    }
+
+    .works-container {
+        padding: 0 20px;
+    }
+
+    .works-title {
+        font-size: 28px;
+    }
+
+    .works-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .work-card {
+        width: 100%;
+    }
+
+    .work-image {
+        margin-bottom: 20px;
+    }
+
+    .work-card-title {
+        font-size: 20px;
+    }
+
+    .work-card-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .work-content {
+        padding: 0 20px 22px 20px;
+    }
+
+    .works-mobile-controls {
+        margin-top: 16px;
+    }
+
+    .works-mobile-indicator-bar {
+        width: 20px;
+    }
+
+    .works-mobile-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* =============================================
+   LÍNEA DIVISORIA MARCAS
+   ============================================= */
+.marcas-divider {
+    width: 100vw;
+    height: 1px;
+    background-color: #BCBCBC;
+    margin-top: 116px;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    left: 50%;
+    position: relative;
+    display: block;
+}
+
+.marcas-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E1E1E;
+    text-align: left;
+    margin: 50px 0 60px 0;
+}
+
+/* Carrusel de marcas */
+.marcas-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.marcas-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marcas-track {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    animation: scroll-marcas 40s linear infinite;
+    width: fit-content;
+}
+
+.marca-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.marca-item img {
+    max-height: 100px;
+    max-width: 250px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.marca-item img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes scroll-marcas {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marcas-carousel:hover .marcas-track {
+    animation-play-state: paused;
+}
+
+/* =============================================
+   RESPONSIVE MARCAS - MÓVIL
+   ============================================= */
+@media screen and (max-width: 768px) {
+    .marcas-divider {
+        margin-top: 60px;
+    }
+
+    .marcas-subtitle {
+        margin: 30px 0 40px 0;
+        font-size: 15px;
+    }
+
+    .marcas-carousel-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .marcas-track {
+        gap: 50px;
+    }
+
+    .marca-item {
+        height: 80px;
+    }
+
+    .marca-item img {
+        max-height: 70px;
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .marcas-divider {
+        margin-top: 40px;
+    }
+
+    .marcas-subtitle {
+        margin: 20px 0 30px 0;
+        font-size: 14px;
+    }
+
+    .marcas-carousel-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .marcas-track {
+        gap: 40px;
+    }
+
+    .marca-item {
+        height: 70px;
+    }
+
+    .marca-item img {
+        max-height: 60px;
+        max-width: 150px;
+    }
+}

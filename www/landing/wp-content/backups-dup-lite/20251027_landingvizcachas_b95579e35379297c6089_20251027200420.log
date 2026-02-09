@@ -1,0 +1,76 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 27 de October de 2025 20:04
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.14
+WORDPRESS:	6.8.3
+PHP INFO:	8.3.26 | SAPI: apache2handler
+SERVER:		Apache/2.4.62 (Win64) OpenSSL/3.0.15 PHP/8.3.26 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (512M default) 
+MEMORY STACK: 50MB
+[CTRL DUP ARCIVE] PACKAGE AS NEW ID 1 SAVED | STATUS:0
+[DUP ARCHIVE] BUILDING DATABASE
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:14 | filtered:0 | create:14
+FILTERED: []
+SQL CREATED: 20251027_landingvizcachas_b95579e35379297c6089_20251027200420_database.sql
+SQL FILE SIZE: 2.32MB (2430407)
+SQL FILE TIME: 2025-10-27 20:04:33
+SQL RUNTIME: 0.32 seg.
+[DUP ARCHIVE] VALIDATING DATABASE
+[DUP ARCHIVE] DONE DATABASE
+
+********************************************************************************
+ARCHIVE Type=DUP Mode=DupArchive
+********************************************************************************
+ARCHIVE DIR:  C:/laragon/www/landing
+ARCHIVE FILE: 20251027_landingvizcachas_b95579e35379297c6089_20251027200420_archive.daf
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	144.2MB
+STATS:	Dirs 1,079 | Files 6,574 | Total 7,653
+[DUP ARCHIVE] DONE ARCHIVE
+[DUP ARCHIVE] DONE ARCHIVE
+[DUP ARCHIVE] DONE ARCHIVE
+[DUP ARCHIVE] DONE ARCHIVE
+[DUP ARCHIVE] DONE ARCHIVE
+[DUP ARCHIVE] DONE ARCHIVE
+building installer
+[DUP ARCHIVE] DONE ARCHIVE
+COMPRESSED SIZE: 56.48MB
+ARCHIVE RUNTIME: 61.28 seg.
+MEMORY STACK: 54MB
+CREATE WARNINGS: No warnings.
+VALIDATION WARNINGS: No warnings.
+[DUP ARCHIVE] DONE ARCHIVE
+[DUP ARCHIVE] HAS COMPLETED CLOSING
+[DUP ARCHIVE] DUP ARCHIVE INTEGRITY CHECK
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 2.32MB
+INSTALLER FILE: 94.83KB
+ARCHIVE FILE: 56.48MB 
+RECUENTO ARCHIVOS/DIRECTORIOS ESPERADOS: 8,391
+RECUENTO ARCHIVOS/DIRECTORIOS ACTUALES: 8,392
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 61.29 seg.
+PEAK PHP MEMORY USED: 54MB
+DONE PROCESSING => 20251027_landingvizcachas 2025-10-27 20:05:34
+

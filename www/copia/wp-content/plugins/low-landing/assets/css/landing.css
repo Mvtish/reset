@@ -1,0 +1,792 @@
+/* ========================================
+   HERO AVENTURA (top)
+   ======================================== */
+.ll-section--adventure {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+}
+
+.ll-topbar {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 32px;
+    background: #26010B;
+    font-family: "Nunito", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.ll-topbar__actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ll-topbar__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.ll-topbar__link img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.ll-topbar__link--wa img {
+    width: 23px;
+    height: 23px;
+}
+
+.ll-topbar__link:hover {
+    opacity: 0.85;
+}
+
+.ll-adventure {
+    position: relative;
+    min-height: 840px;
+    background: url("../images/fondo_aventura.png") center/cover no-repeat;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.ll-adventure__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.18) 40%, rgba(0, 0, 0, 0.12) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ll-adventure__nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 32px 32px 0 350px;
+}
+
+.ll-adventure__logo {
+    position: absolute;
+    left: 56px;
+    top: 12px;
+    font-family: "Nunito", "Segoe UI", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.ll-adventure__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.ll-adventure__menu a {
+    font-family: "Nunito", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.ll-adventure__menu a:hover {
+    text-decoration: underline;
+}
+
+.ll-adventure__lang {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-left: 68px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    min-width: 120px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(152, 172, 181, 0.4);
+    border: 2px solid #ffffff;
+    font-family: "Nunito", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.ll-adventure__lang img {
+    width: 32px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.ll-adventure__lang-icon {
+    font-size: 12px;
+}
+
+.ll-adventure__corners img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ll-adventure__corner--tl {
+    top: 70px;
+    left: 28px;
+}
+
+.ll-adventure__corner--tr {
+    top: 70px;
+    right: 28px;
+}
+
+.ll-adventure__corner--bl {
+    bottom: 38px;
+    left: 28px;
+}
+
+.ll-adventure__corner--br {
+    bottom: 38px;
+    right: 28px;
+}
+
+.ll-adventure__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    min-height: 800px;
+    padding: 0 80px 120px 80px;
+}
+
+.ll-adventure__title {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    max-width: 885px;
+}
+
+.ll-adventure__bullet {
+    color: #730217;
+    font-size: 105px;
+    line-height: 1;
+    position: relative;
+    top: -25px;
+    left: 10px;
+}
+
+.ll-adventure__headline {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.ll-adventure__headline--accent {
+    font-style: italic;
+    color: #730217;
+}
+
+@media (max-width: 900px) {
+    .ll-adventure {
+        min-height: 640px;
+    }
+
+    .ll-adventure__content {
+        padding: 0 32px 80px 32px;
+        align-items: flex-end;
+    }
+
+    .ll-adventure__headline {
+        font-size: 38px;
+    }
+
+    .ll-adventure__corners img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-topbar {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .ll-topbar__text {
+        display: none;
+    }
+
+    .ll-adventure {
+        min-height: 500px;
+    }
+
+    .ll-adventure__nav {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .ll-adventure__logo {
+        position: static;
+        font-size: 20px;
+    }
+
+    .ll-adventure__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .ll-adventure__lang {
+        margin-left: 0;
+        min-width: auto;
+        height: auto;
+        padding: 8px 12px;
+    }
+
+    .ll-adventure__content {
+        padding: 0 20px 60px 20px;
+        min-height: 400px;
+    }
+
+    .ll-adventure__title {
+        gap: 12px;
+    }
+
+    .ll-adventure__bullet {
+        font-size: 60px;
+        top: -10px;
+        left: 0;
+    }
+
+    .ll-adventure__headline {
+        font-size: 28px;
+    }
+
+    .ll-adventure__corners img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ll-adventure__corner--tl,
+    .ll-adventure__corner--tr {
+        top: 50px;
+    }
+
+    .ll-adventure__corner--tl,
+    .ll-adventure__corner--bl {
+        left: 12px;
+    }
+
+    .ll-adventure__corner--tr,
+    .ll-adventure__corner--br {
+        right: 12px;
+    }
+}
+
+/* ========================================
+   WELCOME TOP SECTION
+   ======================================== */
+.ll-section--welcome {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #d9d9d9;
+    padding: clamp(48px, 6vw, 80px) 0;
+}
+
+.ll-welcome {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(28px, 4vw, 40px);
+    align-items: center;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.ll-welcome__header {
+    max-width: 1200px;
+    display: grid;
+    gap: 12px;
+}
+
+.ll-welcome__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0;
+    color: #1e1e1e;
+}
+
+.ll-welcome__subtitle {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+    color: #1e1e1e;
+}
+
+.ll-welcome__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 28px);
+    width: 100%;
+    max-width: 1180px;
+}
+
+.ll-welcome-card {
+    background: #730217;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+}
+
+.ll-welcome-card__image {
+    position: relative;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ll-welcome-card__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.ll-welcome-card__image--one { background-image: url("../images/welcome1.png"); }
+.ll-welcome-card__image--two { background-image: url("../images/welcome2.png"); }
+.ll-welcome-card__image--three { background-image: url("../images/welcome3.png"); }
+
+.ll-welcome-card__overlay {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 0;
+    padding: 60px 14px 28px 14px;
+}
+
+.ll-welcome-card__badge-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 18px;
+    padding: 6px 8px;
+}
+
+.ll-welcome-card__badge {
+    position: relative;
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.ll-welcome-card__badge-corner { position: absolute; width: 10px; height: 10px; }
+.ll-welcome-card__badge-corner--tl { top: 0; left: 0; }
+.ll-welcome-card__badge-corner--tr { top: 0; right: 0; }
+.ll-welcome-card__badge-corner--bl { bottom: 0; left: 0; }
+.ll-welcome-card__badge-corner--br { bottom: 0; right: 0; }
+
+.ll-welcome-card__title {
+    position: relative;
+    z-index: 2;
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #ffffff;
+    text-align: left;
+    max-width: 240px;
+    margin: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.ll-welcome-card__body {
+    background: #730217;
+    padding: 18px 18px 18px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: start;
+    min-height: 100px;
+}
+
+.ll-welcome-card__bullet {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.ll-welcome-card__text {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .ll-welcome__cards { grid-template-columns: 1fr; }
+    .ll-welcome-card { min-height: 0; }
+    .ll-welcome-card__image { height: 180px; }
+    .ll-welcome__title { font-size: 32px; }
+    .ll-welcome__subtitle { font-size: 18px; }
+}
+
+@media (max-width: 640px) {
+    .ll-section--welcome {
+        padding: 32px 20px;
+    }
+
+    .ll-welcome {
+        gap: 24px;
+    }
+
+    .ll-welcome__title {
+        font-size: 24px;
+    }
+
+    .ll-welcome__subtitle {
+        font-size: 16px;
+    }
+
+    .ll-welcome__cards {
+        gap: 16px;
+    }
+
+    .ll-welcome-card__image {
+        height: 160px;
+    }
+
+    .ll-welcome-card__overlay {
+        padding: 40px 12px 20px 12px;
+    }
+
+    .ll-welcome-card__title {
+        font-size: 18px;
+        max-width: 200px;
+    }
+
+    .ll-welcome-card__body {
+        padding: 14px;
+        min-height: 80px;
+    }
+
+    .ll-welcome-card__text {
+        font-size: 14px;
+    }
+}
+
+/* ========================================
+   TEMPORADAS + CLIMA
+   ======================================== */
+.ll-section--seasons {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: #0e0e0e;
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.ll-seasons { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px, 4vw, 72px); align-items: start; }
+.ll-seasons__content { display: flex; flex-direction: column; gap: 22px; }
+.ll-seasons__label { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; text-transform: uppercase; color: #ffffff; letter-spacing: 0; }
+.ll-seasons__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 48.83px; font-weight: 700; line-height: 120%; color: #ffffff; text-transform: uppercase; margin: 0; display: flex; align-items: flex-start; gap: 12px; }
+.ll-seasons__title--second { margin-top: 28px; }
+.ll-seasons__arrow { display: inline-block; width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 18px solid #730217; margin-top: 6px; font-size: 0; line-height: 0; flex-shrink: 0; }
+.ll-seasons__periods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 56px; margin-top: 12px; }
+.ll-seasons__period-title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 700; line-height: 150%; color: #ffffff; margin: 0; text-transform: uppercase; }
+.ll-seasons__period-range { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; line-height: 150%; color: #ffffff; margin: 2px 0 0 0; }
+.ll-seasons__weather { margin-top: 24px; display: flex; justify-content: flex-start; }
+.ll-seasons__weather .paw-widget--v2 { width: min(723px, 100%); padding: 48px 52px 44px; border-radius: 32px; background: #c47c3c; box-shadow: 0 22px 44px rgba(0,0,0,0.2); color: #ffffff; }
+.ll-seasons__weather .paw-widget__header { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "date status" "temp status"; align-items: start; column-gap: 40px; row-gap: 6px; margin-bottom: 6px; }
+.ll-seasons__weather .paw-widget__date { grid-area: date; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.ll-seasons__weather .paw-widget__temp { grid-area: temp; margin: 8px 0 0 0; display: flex; align-items: baseline; gap: 0; }
+.ll-seasons__weather .paw-widget__temp-value { font-size: 96px; font-weight: 700; line-height: 1; }
+.ll-seasons__weather .paw-widget__temp-unit { font-size: 78px; font-weight: 700; line-height: 0.9; display: block; transform: translateY(-6px); margin-right: 8px; }
+.ll-seasons__weather .paw-widget__temp-scale { font-size: 82px; font-weight: 700; line-height: 1; }
+.ll-seasons__weather .paw-widget__status { grid-area: status; display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 6px; }
+.ll-seasons__weather .paw-widget__status .paw-icon { width: 90px; height: 90px; }
+.ll-seasons__weather .paw-widget__status-label { font-size: 14px; font-weight: 700; }
+.ll-seasons__weather .paw-widget__forecast { display: flex; align-items: stretch; justify-content: flex-start; gap: 14px; padding: 0; margin-top: 18px; }
+.ll-seasons__weather .paw-widget__forecast-day { width: 119px; min-width: 119px; flex: 0 0 119px; height: 181px; background: #ce8b51; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px 18px 18px; box-shadow: 0 12px 20px rgba(0,0,0,0.14); margin: 0; }
+.ll-seasons__weather .paw-widget__forecast-icon .paw-icon { width: 52px; height: 52px; }
+.ll-seasons__weather .paw-widget__forecast-temp { font-size: 24px; font-weight: 400; }
+.ll-seasons__weather .paw-widget__forecast-dayname { font-size: 16px; font-weight: 400; white-space: nowrap; }
+.ll-seasons__weather .paw-widget__location { display: none !important; }
+.ll-seasons__image { display: flex; justify-content: flex-end; }
+.ll-seasons__image img { width: 100%; max-width: 582px; height: auto; border-radius: 16px; object-fit: cover; box-shadow: 0 18px 32px rgba(0,0,0,0.35); }
+@media (max-width: 1100px) {
+    .ll-section--seasons { padding: 70px 0; }
+    .ll-seasons { grid-template-columns: 1fr; align-items: start; }
+    .ll-seasons__content { max-width: 780px; margin: 0 auto; }
+    .ll-seasons__image { justify-content: center; }
+    .ll-seasons__weather { justify-content: flex-start; }
+    .ll-seasons__weather .paw-widget--v2 { width: 100%; }
+}
+@media (max-width: 768px) {
+    .ll-section--seasons { padding: 56px 0; }
+    .ll-seasons__title { font-size: 28px; gap: 12px; }
+    .ll-seasons__arrow { font-size: 18px; margin-top: 6px; }
+    .ll-seasons__periods { grid-template-columns: 1fr; }
+    .ll-seasons__period-title, .ll-seasons__period-range { font-size: 18px; }
+    .ll-seasons__weather .paw-widget__temp-value { font-size: 68px; }
+    .ll-seasons__weather .paw-widget__temp-unit { font-size: 54px; }
+    .ll-seasons__weather .paw-widget__temp-scale { font-size: 60px; }
+    .ll-seasons__weather .paw-widget__forecast { flex-wrap: wrap; }
+}
+
+@media (max-width: 640px) {
+    .ll-section--seasons {
+        padding: 40px 20px;
+    }
+
+    .ll-seasons__title {
+        font-size: 22px;
+    }
+
+    .ll-seasons__period-title,
+    .ll-seasons__period-range {
+        font-size: 16px;
+    }
+
+    .ll-seasons__weather .paw-widget--v2 {
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .ll-seasons__weather .paw-widget__temp-value {
+        font-size: 56px;
+    }
+
+    .ll-seasons__weather .paw-widget__temp-unit {
+        font-size: 44px;
+    }
+
+    .ll-seasons__weather .paw-widget__temp-scale {
+        font-size: 48px;
+    }
+
+    .ll-seasons__weather .paw-widget__status .paw-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .ll-seasons__weather .paw-widget__forecast-day {
+        width: 100px;
+        min-width: 100px;
+        flex: 0 0 100px;
+        height: 160px;
+        padding: 14px;
+    }
+
+    .ll-seasons__weather .paw-widget__forecast-icon .paw-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .ll-seasons__weather .paw-widget__forecast-temp {
+        font-size: 20px;
+    }
+
+    .ll-seasons__weather .paw-widget__forecast-dayname {
+        font-size: 14px;
+    }
+
+    .ll-seasons__image img {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+}
+
+/* ========================================
+   DESTINO SECTION
+   ======================================== */
+.ll-section--destination { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); background-image: url("../images/fondo_destino.png"), url("../images/destino.png"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; padding: 64px 0; }
+.ll-section--destination .ll-section__inner { max-width: 1728px; margin: 0 auto; }
+.ll-destination { min-height: 372px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; text-align: center; color: #d9d9d9; }
+.ll-destination__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 48.83px; font-weight: 700; line-height: 100%; text-transform: uppercase; margin: 0; color: #d9d9d9; max-width: 1146px; }
+.ll-destination__description { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 400; line-height: 120%; margin: 0; max-width: 1074px; color: #d9d9d9; }
+@media (max-width: 768px) {
+    .ll-section--destination { padding: 48px 0; }
+    .ll-destination { padding: 0 16px; min-height: 320px; }
+    .ll-destination__title { font-size: 28px; }
+    .ll-destination__description { font-size: 16px; }
+}
+
+/* ========================================
+   TRACKS DE VUELOS SECTION
+   ======================================== */
+.ll-section--tracks { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); background-color: #D9D9D9; padding: 60px 0; }
+.ll-tracks { width: 90%; max-width: 1575px; margin: 0 auto; padding: 0; display: flex; flex-direction: column; gap: 32px; align-items: center; }
+.ll-tracks__label { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; letter-spacing: 0; line-height: 100%; text-transform: uppercase; color: #1E1E1E; align-self: flex-start; }
+.ll-tracks__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 48.83px; font-weight: 700; line-height: 120%; color: #1E1E1E; text-align: left; max-width: 100%; margin: 0; display: flex; align-items: flex-start; gap: 16px; align-self: flex-start; text-transform: uppercase; }
+.ll-tracks__arrow { color: #730217; font-size: 96px; flex-shrink: 0; margin-top: 8px; }
+.ll-tracks__map { width: 100%; max-width: 1575px; border-radius: 12px; overflow: hidden; }
+.ll-tracks__map img { width: 100%; height: auto; display: block; }
+.ll-tracks__description { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; letter-spacing: 0; line-height: 100%; text-transform: uppercase; color: #1E1E1E; text-align: center; margin: 0; text-decoration: underline; }
+.ll-tracks__cta { display: inline-block; padding: 14px 40px; background-color: #730217; color: #FFFFFF; font-family: "Poppins", "Segoe UI", sans-serif; font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: background-color 0.3s ease, transform 0.2s ease; }
+.ll-tracks__cta:hover { background-color: #8b0219; transform: translateY(-2px); }
+@media (max-width: 768px) {
+    .ll-section--tracks { padding: 40px 0; }
+    .ll-tracks { padding: 0 24px; gap: 24px; }
+    .ll-tracks__title { font-size: 24px; gap: 12px; }
+    .ll-tracks__arrow { font-size: 56px; }
+    .ll-tracks__map { border-width: 3px; }
+    .ll-tracks__description { font-size: 14px; }
+    .ll-tracks__cta { padding: 12px 32px; font-size: 14px; }
+}
+
+/* ========================================
+   HERO CTA SECTION
+   ======================================== */
+.ll-hero-wrap { margin: 0; padding: 0; }
+.ll-hero { position: relative; width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); margin-top: 0; margin-bottom: 0; min-height: 515px; color: #ffffff; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: clamp(32px, 6vw, 80px) clamp(24px, 8vw, 120px); background-color: #0f172a; background-image: var(--ll-hero-overlay, url("../images/fondo_oscuro.png")), var(--ll-hero-background, url("../images/fondo_start.png")); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
+.ll-hero__content { position: relative; max-width: 780px; text-align: center; display: grid; gap: clamp(12px, 3vw, 24px); }
+.ll-hero__pretitle { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; letter-spacing: 0.45em; text-transform: uppercase; color: rgba(255, 255, 255, 0.8); }
+.ll-hero__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: clamp(32px, 4.2vw, 49px); font-weight: 700; letter-spacing: 0.02em; }
+.ll-hero__description { font-family: "Poppins", "Segoe UI", sans-serif; font-size: clamp(16px, 2.2vw, 20px); font-weight: 500; line-height: 1.55; color: rgba(255, 255, 255, 0.88); }
+.ll-hero__cta { justify-self: center; display: inline-flex; align-items: center; justify-content: center; width: 190px; height: 50px; border-radius: 999px; background-color: #730217; color: #ffffff; font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease; box-shadow: 0 18px 30px rgba(115, 2, 23, 0.28); }
+.ll-hero__cta:focus-visible, .ll-hero__cta:hover { transform: translateY(-3px); box-shadow: 0 22px 34px rgba(115, 2, 23, 0.35); }
+.ll-hero__cta:focus-visible { outline: 3px solid rgba(255, 255, 255, 0.65); outline-offset: 4px; }
+/* ========================================
+   SECCION DE SERVICIOS
+======================================== */
+.ll-section { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); padding: 0; }
+.ll-section--info { background: #d9d9d9; min-height: 1182px; display: flex; align-items: stretch; justify-content: center; }
+.ll-section--location { background: #101010; min-height: 1090px; display: flex; align-items: stretch; justify-content: center; }
+.ll-section--location .ll-section__inner { padding: clamp(60px, 8vw, 100px) clamp(20px, 3vw, 40px); }
+.ll-section--experiences { background: #D9D9D9; min-height: 1565px; display: flex; align-items: stretch; justify-content: center; }
+.ll-section__inner { width: 100%; max-width: 1728px; min-height: inherit; padding: clamp(40px, 6vw, 120px); margin: 0 auto; }
+
+.ll-services { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(32px, 4vw, 60px); align-items: start; }
+.ll-services__content { display: flex; flex-direction: column; gap: 0; }
+.ll-services__label { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; letter-spacing: 0.05em; color: #171623; text-transform: uppercase; margin-bottom: 24px; }
+.ll-services__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: clamp(32px, 3.5vw, 48.83px); font-weight: 700; line-height: 120%; color: #171623; margin: 0 0 40px 0; position: relative; padding-left: 30px; }
+.ll-services__title::before { content: ""; display: block; width: 0; height: 0; border-left: 18px solid #730217; border-top: 10px solid transparent; border-bottom: 10px solid transparent; position: absolute; left: 0; top: 8px; }
+.ll-services__description { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; line-height: 150%; color: #171623; margin: 0 0 20px 0; }
+.ll-services__description:last-of-type { margin-bottom: 0; }
+.ll-services__features { display: flex; flex-direction: column; gap: 20px; margin-top: 48px; }
+.ll-feature { display: flex; align-items: flex-start; gap: 16px; }
+.ll-feature__icon { flex-shrink: 0; width: 60px; height: 60px; background-color: #730217; border-radius: 10px; display: flex; align-items: center; justify-content: center; padding: 15px; }
+.ll-feature__icon img { width: 30px; height: 30px; object-fit: contain; }
+.ll-feature__text { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.ll-feature__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 700; line-height: 150%; color: #171623; margin: 0; }
+.ll-feature__subtitle { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 16px; font-weight: 500; line-height: 120%; color: #171623; margin: 0; }
+.ll-services__cta { display: inline-flex; align-items: center; justify-content: center; width: 190px; height: 50px; background-color: #730217; border-radius: 10px; font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; color: #FFFFFF; text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease; margin-top: 60px; margin-left: 35px; }
+.ll-services__cta:hover, .ll-services__cta:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(115, 2, 23, 0.3); }
+.ll-services__cta:focus-visible { outline: 3px solid rgba(115, 2, 23, 0.4); outline-offset: 3px; }
+.ll-services__images { display: flex; flex-direction: column; gap: 32px; }
+.ll-services__image { width: 100%; max-width: 562px; height: auto; aspect-ratio: 562 / 450; object-fit: cover; border-radius: 20px; display: block; }
+@media (max-width: 900px) {
+    .ll-services { grid-template-columns: 1fr; gap: 48px; }
+    .ll-services__images { order: -1; }
+    .ll-services__image { max-width: 100%; }
+    .ll-services__title::before { margin-top: 4px; }
+}
+@media (max-width: 768px) {
+    .ll-hero { min-height: 420px; }
+    .ll-hero__pretitle { letter-spacing: 0.35em; }
+    .ll-services__title { font-size: 28px; }
+    .ll-services__description { font-size: 18px; }
+    .ll-feature__title { font-size: 18px; }
+    .ll-feature__subtitle { font-size: 14px; }
+    .ll-feature__icon { width: 50px; height: 50px; }
+    .ll-services__cta { width: 160px; height: 45px; font-size: 18px; }
+}
+
+/* ========================================
+   SECCION DE UBICACION/MAPA
+======================================== */
+.ll-location { display: flex; flex-direction: column; gap: 48px; align-items: center; }
+.ll-location__header { text-align: center; display: flex; flex-direction: column; gap: 24px; align-items: center; }
+.ll-location__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: clamp(32px, 3.5vw, 48.83px); font-weight: 700; line-height: 120%; color: #FFFFFF; margin: 0; }
+.ll-location__details { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.ll-location__detail { display: flex; align-items: center; gap: 12px; }
+.ll-location__icon { width: 32px; height: 32px; object-fit: contain; }
+.ll-location__text { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; line-height: 150%; color: #D9D9D9; }
+.ll-location__map { width: 100%; max-width: 1557px; height: 575px; border-radius: 16px; overflow: hidden; }
+.ll-location__map iframe { display: block; width: 100%; height: 100%; }
+@media (max-width: 768px) { .ll-location__title { font-size: 28px; } .ll-location__text { font-size: 18px; } .ll-location__map { height: 400px; } }
+
+/* ========================================
+   SECCION DE EXPERIENCIAS
+======================================== */
+.ll-experiences { display: flex; flex-direction: column; gap: 48px; }
+.ll-experiences__header { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; gap: 24px 40px; align-items: start; }
+.ll-experiences__label { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; letter-spacing: 0.05em; color: #000000; text-transform: uppercase; grid-column: 1 / -1; }
+.ll-experiences__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: clamp(32px, 3.5vw, 48.83px); font-weight: 700; line-height: 100%; color: #1E1E1E; margin: 0; margin-left: -60px; max-width: 620px; grid-column: 1; position: relative; padding-left: 60px; }
+.ll-experiences__title-arrow { color: #730217; font-size: 0.6em; position: absolute; left: 0; top: 0; }
+.ll-experiences__description { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; line-height: 150%; color: #1E1E1E; margin: 0; max-width: 553px; grid-column: 2; grid-row: 2; }
+.ll-experiences__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 20px; }
+.ll-experience-card { width: 689px; display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; }
+.ll-experience-card__image { position: relative; width: 689px; height: 303px; }
+.ll-experience-card__image img { width: 689px; height: 303px; object-fit: cover; display: block; }
+.ll-experience-card__image::after { content: ""; position: absolute; top: 0; left: 0; width: 689px; height: 303px; background-image: url('../images/fondo_lugares.png'); background-size: 689px 303px; background-position: center; background-repeat: no-repeat; pointer-events: none; }
+.ll-experience-card__header { position: absolute; bottom: 20px; left: 24px; display: flex; align-items: center; gap: 16px; z-index: 3; }
+.ll-experience-card__icon { width: 60px; height: 60px; background-color: #730217; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.ll-experience-card__icon img { width: 32px; height: 32px; object-fit: contain; filter: brightness(0) invert(1); }
+.ll-experience-card__title { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 24px; font-weight: 700; line-height: 1.2; color: #FFFFFF; margin: 0; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+.ll-experience-card__content { width: 689px; min-height: 73px; background-color: #730217; padding: 20px 24px; display: flex; align-items: center; gap: 16px; }
+.ll-experience-card__content::before { content: ""; width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-left: 22px solid #FFFFFF; flex-shrink: 0; }
+.ll-experience-card__text { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 16px; font-weight: 500; line-height: 100%; color: #FFFFFF; margin: 0; }
+.ll-experiences__footer { display: flex; flex-direction: column; align-items: center; gap: 24px; margin-top: 20px; }
+.ll-experiences__footer-text { font-family: "Libre Baskerville", "Times New Roman", serif; font-size: 16px; font-weight: 700; letter-spacing: 0.05em; color: #1E1E1E; text-transform: uppercase; margin: 0; text-align: center; }
+.ll-experiences__cta { display: inline-flex; align-items: center; justify-content: center; width: 221px; height: 50px; background-color: #730217; border-radius: 10px; font-family: "Poppins", "Segoe UI", sans-serif; font-size: 20px; font-weight: 500; line-height: 120%; color: #FFFFFF; text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.ll-experiences__cta:hover, .ll-experiences__cta:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(115, 2, 23, 0.3); }
+.ll-experiences__cta:focus-visible { outline: 3px solid rgba(115, 2, 23, 0.4); outline-offset: 3px; }
+@media (max-width: 900px) { .ll-experiences__grid { grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 768px) {
+    .ll-experiences__title { font-size: 28px; }
+    .ll-experiences__description { font-size: 18px; }
+    .ll-experience-card__title { font-size: 18px; }
+    .ll-experience-card__text { font-size: 16px; }
+}

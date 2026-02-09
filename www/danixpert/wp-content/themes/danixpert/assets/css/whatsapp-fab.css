@@ -1,0 +1,100 @@
+/* ========================================
+   WhatsApp Floating Bubble - Danixpert
+   ======================================== */
+
+.whatsapp-fab {
+    --whatsapp-fab-size: 56px;
+    --whatsapp-fab-offset: 18px;
+    --whatsapp-fab-header-offset: 0px;
+
+    position: fixed;
+    width: var(--whatsapp-fab-size);
+    height: var(--whatsapp-fab-size);
+    border-radius: 999px;
+    background: #25D366;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 2005;
+    cursor: grab;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+    box-shadow: 0 10px 24px rgba(1, 15, 32, 0.22);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    will-change: transform;
+}
+
+.whatsapp-fab__icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .whatsapp-fab:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 28px rgba(1, 15, 32, 0.26);
+    }
+}
+
+.whatsapp-fab:active {
+    transform: scale(0.97);
+}
+
+.whatsapp-fab.is-dragging {
+    transition: none;
+    box-shadow: 0 16px 32px rgba(1, 15, 32, 0.3);
+    cursor: grabbing;
+}
+
+.whatsapp-fab.is-snapping {
+    transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s ease;
+}
+
+body.navbar-open .whatsapp-fab {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.whatsapp-fab[data-corner="bottom-right"] {
+    right: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-right));
+    bottom: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-bottom));
+    left: auto;
+    top: auto;
+}
+
+.whatsapp-fab[data-corner="bottom-left"] {
+    left: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-left));
+    bottom: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-bottom));
+    right: auto;
+    top: auto;
+}
+
+.whatsapp-fab[data-corner="top-right"] {
+    right: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-right));
+    top: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-top) + var(--whatsapp-fab-header-offset));
+    left: auto;
+    bottom: auto;
+}
+
+.whatsapp-fab[data-corner="top-left"] {
+    left: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-left));
+    top: calc(var(--whatsapp-fab-offset) + env(safe-area-inset-top) + var(--whatsapp-fab-header-offset));
+    right: auto;
+    bottom: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp-fab {
+        --whatsapp-fab-size: 52px;
+        --whatsapp-fab-offset: 14px;
+    }
+
+    .whatsapp-fab__icon {
+        width: 26px;
+        height: 26px;
+    }
+}

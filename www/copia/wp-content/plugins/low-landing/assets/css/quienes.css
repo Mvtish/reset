@@ -1,0 +1,812 @@
+﻿/* ========================================
+   HERO QUIENES SOMOS
+   ======================================== */
+.ll-section--quienes {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+}
+
+.ll-quienes {
+    position: relative;
+    min-height: 900px;
+    background: url("../images/fondo_quienes.png") center/cover no-repeat;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.ll-quienes__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.12) 40%, rgba(0, 0, 0, 0.08) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ll-quienes__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 820px;
+    padding: 0 80px 120px 80px;
+}
+
+.ll-quienes__title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 640px;
+}
+
+.ll-quienes__bullet {
+    color: #730217;
+    font-size: 100px;
+    line-height: 1;
+    margin-top: -14px;
+}
+
+.ll-quienes__headline {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ll-quienes__headline--accent {
+    color: #730217;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+    .ll-quienes {
+        min-height: 580px;
+    }
+
+    .ll-quienes__content {
+        padding: 0 32px 72px 32px;
+        min-height: 520px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ll-quienes__title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ll-quienes__headline {
+        font-size: 32px;
+    }
+
+    .ll-quienes__bullet {
+        font-size: 64px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-quienes {
+        min-height: 480px;
+    }
+
+    .ll-quienes__content {
+        padding: 0 20px 50px 20px;
+        min-height: 400px;
+    }
+
+    .ll-quienes__headline {
+        font-size: 24px;
+    }
+
+    .ll-quienes__bullet {
+        font-size: 48px;
+    }
+}
+
+/* ========================================
+
+   SECCION UNION (Sobre nosotros)
+   ======================================== */
+.ll-section--union {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #d9d9d9;
+}
+
+.ll-union {
+    max-width: 1728px;
+    min-height: 820px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(32px, 4vw, 72px);
+    align-items: center;
+    padding: clamp(48px, 6vw, 96px);
+}
+
+.ll-union__image {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ll-union__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ll-union__badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    left: auto;
+    padding: 16px 20px;
+    display: grid;
+    gap: 2px;
+    text-align: center;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.ll-union__badge-number {
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1;
+}
+
+.ll-union__badge-text {
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.ll-union__content {
+    display: grid;
+    gap: 18px;
+    color: #000000;
+}
+
+.ll-union__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.ll-union__eyebrow-line {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #730217;
+}
+
+.ll-union__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 500;
+    line-height: 110%;
+    margin: 0;
+    color: #000000;
+}
+
+.ll-union__text {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0;
+    color: #000000;
+}
+
+.ll-union__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 50px;
+    background-color: #730217;
+    color: #FFFFFF;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.ll-union__cta:hover,
+.ll-union__cta:focus-visible {
+    background-color: #8b0219;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .ll-union {
+        grid-template-columns: 1fr;
+        min-height: unset;
+        padding: 48px 32px;
+    }
+
+    .ll-union__image {
+        max-width: 100%;
+        justify-self: center;
+    }
+
+    .ll-union__content {
+        text-align: left;
+    }
+
+    .ll-union__badge {
+        right: 24px;
+        top: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ll-union__title {
+        font-size: 32px;
+    }
+
+    .ll-union__text {
+        font-size: 18px;
+    }
+
+    .ll-union__badge {
+        position: static;
+        justify-self: center;
+        padding: 14px 16px;
+        margin-top: 12px;
+    }
+
+    .ll-union__badge-number {
+        font-size: 26px;
+    }
+
+    .ll-union__badge-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-union {
+        padding: 32px 20px;
+        gap: 32px;
+    }
+
+    .ll-union__image {
+        height: 300px;
+    }
+
+    .ll-union__title {
+        font-size: 26px;
+    }
+
+    .ll-union__text {
+        font-size: 16px;
+    }
+
+    .ll-union__cta {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.ll-adventure--services {
+    background: url("../images/fondo_vuelos.png") center/cover no-repeat;
+}
+
+.ll-adventure--protocols {
+    background: url("../images/protocolos_header.png") center/cover no-repeat;
+}
+
+/* ========================================
+   SECCION VIVE (overlay hero)
+   ======================================== */
+.ll-section--vive {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+}
+
+.ll-vive {
+    position: relative;
+    min-height: 372px;
+    background: url("../images/vive_fondo.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.ll-vive__overlay {
+    position: absolute;
+    inset: 0;
+    background: url("../images/vive_capa.png") center/cover no-repeat;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ll-vive__content {
+    position: relative;
+    z-index: 2;
+    max-width: 1386px;
+    padding: 48px 24px;
+    display: grid;
+    gap: 18px;
+}
+
+.ll-vive__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin: 0;
+    color: #d9d9d9;
+}
+
+.ll-vive__subtitle {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    color: #d9d9d9;
+}
+
+@media (max-width: 900px) {
+    .ll-vive {
+        min-height: 320px;
+    }
+
+    .ll-vive__title {
+        font-size: 32px;
+    }
+
+    .ll-vive__subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-vive {
+        min-height: 280px;
+    }
+
+    .ll-vive__content {
+        padding: 32px 20px;
+    }
+
+    .ll-vive__title {
+        font-size: 24px;
+    }
+
+    .ll-vive__subtitle {
+        font-size: 14px;
+    }
+}
+
+/* ========================================
+
+   ASEGURA EXPERIENCE
+   ======================================== */
+.ll-section--asegura {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #d9d9d9;
+    padding: clamp(48px, 6vw, 80px) 0;
+    min-height: 898px;
+    display: flex;
+    align-items: center;
+}
+
+.ll-asegura {
+    max-width: 1728px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 48px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, 5vw, 48px);
+    align-items: center;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.ll-asegura__header {
+    display: grid;
+    gap: 16px;
+}
+
+.ll-asegura__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ll-asegura__subtitle {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+.ll-asegura__cards {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 28px);
+    justify-items: center;
+}
+
+.ll-asegura-card {
+    background: #730217;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    width: 100%;
+}
+
+.ll-asegura-card__image {
+    position: relative;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ll-asegura-card__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.ll-asegura-card__image--one { background-image: url("../images/welcome1.png"); }
+.ll-asegura-card__image--two { background-image: url("../images/welcome2.png"); }
+.ll-asegura-card__image--three { background-image: url("../images/welcome3.png"); }
+
+.ll-asegura-card__overlay {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 0;
+    padding: 60px 14px 28px 14px;
+    color: #ffffff;
+}
+
+.ll-asegura-card__badge-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 18px;
+    padding: 6px 8px;
+}
+
+.ll-asegura-card__badge {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background-color: transparent;
+}
+
+.ll-asegura-card__badge img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.ll-asegura-card__badge-corner {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.ll-asegura-card__badge-corner--tl { top: 0; left: 0; }
+.ll-asegura-card__badge-corner--tr { top: 0; right: 0; }
+.ll-asegura-card__badge-corner--bl { bottom: 0; left: 0; }
+.ll-asegura-card__badge-corner--br { bottom: 0; right: 0; }
+
+.ll-asegura-card__title {
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #ffffff !important;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 240px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.ll-asegura-card__body {
+    background: #730217;
+    padding: 18px 18px 18px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: start;
+    min-height: 100px;
+}
+
+.ll-asegura-card__bullet {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.ll-asegura-card__text {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.ll-asegura__footer {
+    display: grid;
+    gap: 12px;
+    justify-items: center;
+    margin-top: 8px;
+}
+
+.ll-asegura__link {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1E1E1E;
+    text-decoration: underline;
+}
+
+.ll-asegura__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 50px;
+    background-color: #730217;
+    color: #FFFFFF;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.ll-asegura__cta:hover,
+.ll-asegura__cta:focus-visible {
+    background-color: #8b0219;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .ll-asegura__cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-asegura {
+        padding: 32px 20px;
+    }
+
+    .ll-asegura__intro {
+        gap: 16px;
+    }
+
+    .ll-asegura__title {
+        font-size: 24px;
+    }
+
+    .ll-asegura__description {
+        font-size: 16px;
+    }
+
+    .ll-asegura-card__header {
+        padding: 40px 12px 20px 12px;
+    }
+
+    .ll-asegura-card__title {
+        font-size: 18px;
+        max-width: 200px;
+    }
+
+    .ll-asegura-card__body {
+        padding: 14px;
+        min-height: 80px;
+    }
+
+    .ll-asegura-card__text {
+        font-size: 14px;
+    }
+
+    .ll-asegura__cta {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* ========================================
+   COLABORADORES
+   ======================================== */
+.ll-section--collab {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #0f0f0f;
+    padding: 32px 0;
+}
+
+.ll-collab {
+    max-width: 1728px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.ll-collab__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ll-collab__arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid #730217;
+}
+
+.ll-collab__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.ll-collab__marquee {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.ll-collab__track {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 32px;
+    min-width: 200%;
+    will-change: transform;
+    transform: translateX(-50%);
+    animation: ll-collab-marquee 22s linear infinite;
+}
+
+.ll-collab__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    flex: 0 0 auto;
+}
+
+.ll-collab__item img {
+    max-width: 140px;
+    max-height: 120px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes ll-collab-marquee {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .ll-collab__track {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ll-collab {
+        padding: 0 20px;
+    }
+    .ll-collab__track {
+        gap: 20px;
+    }
+    .ll-collab__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-section--collab {
+        padding: 24px 0;
+    }
+
+    .ll-collab {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .ll-collab__title {
+        font-size: 18px;
+    }
+
+    .ll-collab__track {
+        gap: 16px;
+        animation-duration: 18s;
+    }
+
+    .ll-collab__item img {
+        max-width: 100px;
+        max-height: 80px;
+    }
+}

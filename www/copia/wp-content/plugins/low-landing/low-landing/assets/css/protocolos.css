@@ -1,0 +1,223 @@
+
+/* ========================================
+   PROTOCOLOS LISTA
+   ======================================== */
+.ll-section--protocols-list {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #d9d9d9;
+    padding: clamp(48px, 6vw, 80px) 0;
+}
+
+.ll-protocols {
+    max-width: 1728px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 48px);
+    display: grid;
+    gap: clamp(28px, 4vw, 48px);
+}
+
+.ll-protocols__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ll-protocols__bullet {
+    color: #730217;
+    font-size: 70px;
+    line-height: 1;
+    position: relative;
+    top: -7px;
+    margin-left: 6px;
+}
+
+.ll-protocols__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: clamp(28px, 3.4vw, 36px);
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0;
+    color: #1e1e1e;
+}
+
+.ll-protocols__columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 32px);
+}
+
+.ll-protocols__column {
+    display: grid;
+    gap: 12px;
+}
+
+.ll-protocols__label {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+
+.ll-protocols__cards {
+    display: grid;
+    gap: 20px;
+}
+
+.ll-protocols-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 18px 22px;
+    min-height: 90px;
+    max-width: 726px;
+    background: #730217;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.ll-protocols-card:hover,
+.ll-protocols-card:focus-visible {
+    background-color: #8b0219;
+    transform: translateY(-2px);
+    box-shadow: 6px 10px 18px rgba(0, 0, 0, 0.3);
+}
+
+.ll-protocols-card__text {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #ffffff;
+    margin: 0;
+}
+
+.ll-protocols-card__actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ll-protocols-card__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ll-protocols-card__icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+@media (max-width: 900px) {
+    .ll-protocols__columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ========================================
+   DISFRUTA CTA
+   ======================================== */
+.ll-section--disfruta {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+}
+
+.ll-disfruta {
+    position: relative;
+    min-height: 372px;
+    background: url("../images/disfrutes_fondo.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d9d9d9;
+    overflow: hidden;
+}
+
+.ll-disfruta__overlay {
+    position: absolute;
+    inset: 0;
+    background: url("../images/disfrutes_capa.png") center/cover no-repeat;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ll-disfruta__content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 12px;
+    max-width: 1102px;
+    padding: 48px 24px;
+}
+
+.ll-disfruta__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    color: #d9d9d9;
+}
+
+.ll-disfruta__subtitle {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    color: #d9d9d9;
+}
+
+@media (max-width: 900px) {
+    .ll-disfruta {
+        min-height: 300px;
+    }
+
+    .ll-disfruta__title {
+        font-size: 32px;
+    }
+
+    .ll-disfruta__subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-section--disfruta {
+        padding: 32px 0;
+    }
+
+    .ll-disfruta {
+        min-height: 240px;
+    }
+
+    .ll-disfruta__content {
+        padding: 32px 20px;
+    }
+
+    .ll-disfruta__title {
+        font-size: 24px;
+    }
+
+    .ll-disfruta__subtitle {
+        font-size: 14px;
+    }
+}

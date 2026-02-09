@@ -1,0 +1,519 @@
+
+/* ========================================
+   SERVICIOS PAGE (Intro)
+   ======================================== */
+.ll-section--services-intro {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #d9d9d9;
+    padding: clamp(48px, 6vw, 80px) 0;
+}
+
+.ll-services-intro {
+    max-width: 1728px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 48px);
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(28px, 4vw, 48px);
+    align-items: start;
+}
+
+.ll-services-intro__content { display: grid; gap: 14px; }
+
+.ll-services-intro__title { display: flex; gap: 16px; align-items: flex-start; }
+.ll-services-intro__arrow { color: #730217; font-size: 34px; line-height: 1; flex-shrink: 0; margin-top: 6px; }
+.ll-services-intro__kicker { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 26px; font-weight: 700; line-height: 120%; color: #1e1e1e; margin: 0; text-transform: uppercase; }
+.ll-services-intro__text { font-family: "Poppins", "Segoe UI", sans-serif; font-size: 18px; font-weight: 400; line-height: 140%; margin: 0; color: #1e1e1e; }
+
+.ll-services-intro__features { display: grid; gap: 14px; margin-top: 8px; }
+.ll-services-intro__feature { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; }
+.ll-services-intro__icon { width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; }
+.ll-services-intro__icon img { width: 32px; height: 32px; object-fit: contain; }
+.ll-services-intro__feature-text { display: flex; flex-direction: column; gap: 4px; font-family: "Poppins", "Segoe UI", sans-serif; color: #1e1e1e; font-size: 16px; line-height: 130%; }
+
+.ll-services-intro__cta { margin-top: 8px; display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 36px; background: #730217; color: #ffffff; font-family: "Poppins", "Segoe UI", sans-serif; font-size: 16px; font-weight: 600; text-decoration: none; border-radius: 4px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.ll-services-intro__cta:hover, .ll-services-intro__cta:focus-visible { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(115, 2, 23, 0.25); }
+
+.ll-services-intro__gallery { display: grid; gap: 18px; align-self: start; margin-top: -40px; }
+.ll-services-intro__gallery img { width: 100%; border-radius: 12px; object-fit: cover; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 1100px) { .ll-services-intro { grid-template-columns: 1fr; } .ll-services-intro__gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: -24px; } }
+@media (max-width: 768px) { .ll-services-intro__kicker { font-size: 22px; } .ll-services-intro__text { font-size: 16px; } .ll-services-intro__gallery { grid-template-columns: 1fr; margin-top: -14px; } }
+.ll-services-intro__label {
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    letter-spacing: 0.02em;
+}
+
+/* ========================================
+   DOS FORMAS DE VIVIR EL CIELO
+   ======================================== */
+.ll-section--two-ways {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;
+    position: relative;
+}
+
+.ll-two-ways {
+    position: relative;
+    min-height: 292px;
+    background: url("../images/fondo_formas.png") center/cover no-repeat;
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+.ll-two-ways__overlay {
+    position: absolute;
+    inset: 0;
+    background: url("../images/capa_formas.png") center/cover no-repeat;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ll-two-ways__content {
+    position: relative;
+    z-index: 2;
+    max-width: 1228px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.ll-two-ways__title {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #D9D9D9;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.ll-two-ways__subtitle {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #D9D9D9;
+    margin: 0;
+    max-width: 1074px;
+}
+
+.ll-two-ways__description {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #D9D9D9;
+    margin: 0;
+    max-width: 1074px;
+}
+
+@media (max-width: 768px) {
+    .ll-two-ways {
+        min-height: auto;
+        padding: 40px 24px;
+    }
+    
+    .ll-two-ways__title {
+        font-size: 32px;
+    }
+    
+    .ll-two-ways__subtitle,
+    .ll-two-ways__description {
+        font-size: 16px;
+    }
+}
+
+
+/* ========================================
+   FLIGHT OPTIONS SECTION
+   ======================================== */
+.ll-section--flight-options {
+    background-color: #000000;
+    padding: 80px 0;
+}
+
+.ll-flight-options {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ll-flight-option {
+    display: grid;
+    grid-template-columns: 522px 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.ll-flight-option:last-child {
+    margin-bottom: 0;
+}
+
+.ll-flight-option--reverse {
+    grid-template-columns: 1fr 522px;
+}
+
+.ll-flight-option--reverse .ll-flight-option__image {
+    order: 2;
+}
+
+.ll-flight-option--reverse .ll-flight-option__content {
+    order: 1;
+}
+
+.ll-flight-option__image {
+    width: 100%;
+    height: auto;
+}
+
+.ll-flight-option__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ll-flight-option__content {
+    color: #FFFFFF;
+}
+
+.ll-flight-option__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.ll-flight-option__bullet {
+    color: #B91C50;
+    font-size: 65px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.ll-flight-option__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 0 0 24px 0;
+}
+
+.ll-flight-option__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.ll-flight-option__list li {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #D9D9D9;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.ll-flight-option__list li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.ll-flight-option__price {
+    display: inline-block;
+    background: #730217;
+    padding: 16px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .ll-flight-option {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .ll-flight-option--reverse {
+        grid-template-columns: 1fr;
+    }
+    
+    .ll-flight-option--reverse .ll-flight-option__image {
+        order: 1;
+    }
+    
+    .ll-flight-option--reverse .ll-flight-option__content {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .ll-section--flight-options {
+        padding: 60px 0;
+    }
+    
+    .ll-flight-options {
+        padding: 0 24px;
+    }
+    
+    .ll-flight-option {
+        margin-bottom: 60px;
+        gap: 30px;
+    }
+    
+    .ll-flight-option__title {
+        font-size: 22px;
+        gap: 8px;
+    }
+    
+    .ll-flight-option__text {
+        font-size: 16px;
+    }
+    
+    .ll-flight-option__list li {
+        font-size: 14px;
+    }
+    
+    .ll-flight-option__price {
+        font-size: 20px;
+        padding: 14px 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .ll-section--flight-options {
+        padding: 40px 0;
+    }
+
+    .ll-flight-options {
+        padding: 0 20px;
+    }
+
+    .ll-flight-option {
+        margin-bottom: 40px;
+        gap: 24px;
+    }
+
+    .ll-flight-option__title {
+        font-size: 20px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .ll-flight-option__bullet {
+        font-size: 48px;
+        margin-top: 0;
+    }
+
+    .ll-flight-option__text {
+        font-size: 15px;
+    }
+
+    .ll-flight-option__list li {
+        font-size: 13px;
+        padding-left: 20px;
+    }
+
+    .ll-flight-option__price {
+        font-size: 24px;
+        padding: 12px 24px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ========================================
+   EXPERIENCES GALLERY SECTION
+   ======================================== */
+.ll-section--experiences {
+    background-color: #D9D9D9;
+    padding: 80px 0 170px 0;
+}
+
+.ll-experiences {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ll-experiences__header {
+    margin-bottom: 50px;
+}
+
+.ll-experiences__title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ll-experiences__bullet {
+    color: #730217;
+    font-size: 65px;
+    flex-shrink: 0;
+    margin-top: 0;
+    line-height: 1;
+}
+
+.ll-experiences__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 48px;
+    width: 100%;
+}
+
+.ll-experiences__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #000000;
+    margin: 0;
+    flex: 1 1 520px;
+}
+
+.ll-experiences__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    margin: 0;
+    flex: 0 0 auto;
+    text-align: left;
+    max-width: 420px;
+}
+
+.ll-experiences__gallery {
+    display: grid;
+    grid-template-columns: 683px 683px;
+    grid-template-rows: repeat(3, 360px);
+    gap: 24px;
+    align-items: stretch;
+    margin-top: -100px;
+}
+
+.ll-experiences__item {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.ll-experiences__item--large {
+    grid-row: 1 / 4;
+    height: 1240px;
+}
+
+.ll-experiences__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .ll-experiences__gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 300px 300px;
+        margin-top: -70px;
+    }
+    
+    .ll-experiences__item--large {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .ll-section--experiences {
+        padding: 60px 0;
+    }
+    
+    .ll-experiences {
+        padding: 0 24px;
+    }
+    
+    .ll-experiences__header {
+        margin-bottom: 30px;
+    }
+    
+    .ll-experiences__title {
+        font-size: 32px;
+        gap: 12px;
+    }
+    
+    .ll-experiences__bullet {
+        font-size: 48px;
+    }
+    
+    .ll-experiences__title-wrapper {
+        align-items: flex-start;
+    }
+
+    .ll-experiences__text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .ll-experiences__title {
+        flex: 1 1 auto;
+    }
+
+    .ll-experiences__subtitle {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    
+    .ll-experiences__gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+    
+    .ll-experiences__item--large {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    
+    .ll-experiences__item {
+        height: 250px;
+    }
+    
+.ll-experiences__item--large {
+        height: 400px;
+    }
+}
